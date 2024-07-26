@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 最新のESNextにトランスパイル
+    "module": "ESNext", // ESNextモジュールを使用
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ], // 使用するライブラリ
+    "skipLibCheck": true, // ライブラリの型チェックをスキップ
+    "esModuleInterop": true, // ESモジュールの互換性を有効にする
+    "forceConsistentCasingInFileNames": true, // ファイル名の大文字小文字の一貫性を強制
+    /* Bundler mode */
+    "moduleResolution": "node", // モジュール解決方法をNode.jsスタイルに設定
+    "allowImportingTsExtensions": true, // TypeScriptファイルの拡張子をインポート可能にする
+    "resolveJsonModule": true, // JSONモジュールをインポート可能にする
+    "isolatedModules": true, // 各ファイルを個別にトランスパイル
+    "moduleDetection": "force", // モジュール検出を強制
+    "noEmit": true, // 出力ファイルを生成しない
+    /* Linting */
+    "strict": true, // 厳格モードを有効にする
+    "noUnusedLocals": true, // 未使用のローカル変数を許可しない
+    "noUnusedParameters": true, // 未使用のパラメーターを許可しない
+    "noFallthroughCasesInSwitch": true, // switch文のフォールスルーを許可しない
+    /* Emit */
+    "baseUrl": "./", // ベースURLをプロジェクトルートに設定
+    "paths": {
+      "@/*": [
+        "src/*"
+      ] // エイリアスのパスを設定
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "types/**/*.d.ts"
+  ] // インクルードするファイル
+}
