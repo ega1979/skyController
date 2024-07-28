@@ -9,3 +9,10 @@ Try on [here](https://edison-garden.tokyo/skycontroller/)
 - Sass
 - vite
 
+## Next Challenges
+
+- [ ] using WebVR
+- [ ] particle in the sky
+- [ ] with wind sound
+- [ ] fly object(e.g. bird or air plane)
+- [ ] weather
